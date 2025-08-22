@@ -5,7 +5,6 @@ SRC_DIR = src
 SRCS    = $(SRC_DIR)/roll.cpp main.cpp
 OBJS    = $(SRCS:.cpp=.o)
 
-# Détection du système pour les commandes de suppression
 ifeq ($(OS),Windows_NT)
     RM = del /F /Q
     EXE = .exe
