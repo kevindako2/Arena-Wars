@@ -4,8 +4,6 @@
 #include "my.hpp"
 
 int main() {
-    int c = my_roll();
-    printf("%d\n", c);
-
+    start_game();
     return 0;
 }

@@ -2,10 +2,9 @@ CXX     = g++
 CXXFLAGS= -Wall -Wextra -std=c++17 -I include
 NAME    = arena_game
 SRC_DIR = src
-SRCS    = $(SRC_DIR)/roll.cpp main.cpp
+SRCS    = $(wildcard $(SRC_DIR)/*.cpp) main.cpp
 OBJS    = $(SRCS:.cpp=.o)
 
-# Détection du système pour les commandes de suppression
 ifeq ($(OS),Windows_NT)
     RM = del /F /Q
     EXE = .exe
